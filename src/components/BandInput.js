@@ -19,7 +19,7 @@ class BandInput extends Component {
       band: this.state.text
     })
     this.setState({
-      text: ""
+      text: " "
     })
   }
 
@@ -32,10 +32,9 @@ class BandInput extends Component {
           <input
             type="text"
             onChange={this.handleChange}
-            value={this.state.value}/>
+            value={this.state.text}/>
           <input type="submit" />
         </form>
-        {this.state.value}
       </div>
     );
   }
